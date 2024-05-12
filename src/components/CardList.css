@@ -1,0 +1,23 @@
+.card-list {
+  background-color: rgba(226, 211, 211, 0.678);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 0.5rem;
+}
+
+
+
+/* ---------------media screen */
+
+@media (min-width:652px){
+    .card-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 993px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
