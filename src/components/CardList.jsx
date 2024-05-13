@@ -1,20 +1,19 @@
 import React from 'react'
 import Card from './Card'
-import "./CardList.css"
-import {cardOne,cardTwo,cardThree,cardFour,cardFive,cardSix} from "../cardData.js"
+import "./CardList.css";
+import cards from "../cardData"
+
 
 const CardList = () => {
-   
+
     return (
         <section className='card-list'>
-            <Card image={cardOne.image} title={cardOne.title} description={cardOne.description}/>
-            <Card image={cardTwo.image} title={cardTwo.title} description={cardTwo.description}/>
-            <Card image={cardThree.image} title={cardThree.title} description={cardThree.description}/>
-            <Card image={cardFour.image} title={cardFour.title} description={cardFour.description}/> 
-            <Card image={cardFive.image} title={cardFive.title} description={cardFive.description}/> 
-            <Card image={cardSix.image} title={cardSix.title} description={cardSix.description}/> 
+            {cards.map((card) => {
+                // never forget need to return mapArrayFunction that is type function;<< rendering List >>
+                return <Card card={card} {...card} key={card.id} />
+            })}
         </section>
     )
-}
+};
 
-export default CardList
+export default CardList;

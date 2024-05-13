@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css"
 import CardList from './components/CardList';
 
-
 const App = () => {
     
+   
     return (
         <Fragment>
             <div className="app-section">

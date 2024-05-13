@@ -1,0 +1,20 @@
+props.children;
+
+<Card image={cardOne.image} title={cardOne.title} description={cardOne.description}> 
+    <p>Props Children</p>
+</Card>
+
+const Card = ({image,title,description,children}) => {
+    // console.log(children);
+    return (
+        <div className='card-container'>
+            <img src={image} alt="img1"  />
+            <h2 style={{letterSpacing:"0.3rem" }} className='card-title'>{title}</h2>
+            <p className='card-description'>{description}</p>
+            <p>{children}</p>
+        </div>
+    )
+}
+================================================================
+
+
