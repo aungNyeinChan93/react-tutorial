@@ -5,14 +5,19 @@ import cards from "../cardData"
 
 
 const CardList = () => {
-
+    const eventHandeler= (e)=>{
+        console.log("event occour...",e);
+    }
     return (
+        /* cardList section */
         <section className='card-list'>
             {cards.map((card) => {
+                
                 // never forget need to return mapArrayFunction that is type function;<< rendering List >>
-                return <Card card={card} {...card} key={card.id} />
+                return <Card card={card} {...card} key={card.id} event={eventHandeler}/>
             })}
         </section>
+        
     )
 };
 
