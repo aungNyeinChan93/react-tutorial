@@ -4,6 +4,7 @@ import CardList from './components/CardList';
 import Counter from './components/Counter';
 import UseEffect from "./components/UseEffect"
 import GitHubUser from './components/GitHubUser';
+import UseRef from "./components/UseRef"
 
 const App = () => {
     
@@ -24,6 +25,9 @@ const App = () => {
 
             {/* GitHubUser Section */}
             <GitHubUser/>
+
+            {/* UseRef hook section */}
+            <UseRef/>
         </Fragment>
     )
 };
