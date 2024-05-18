@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react';
+import '@fortawesome/fontawesome-free/js/all.js';
 import "bootstrap/dist/css/bootstrap.min.css"
 import CardList from './components/CardList';
 import Counter from './components/Counter';
 import UseEffect from "./components/UseEffect"
 import GitHubUser from './components/GitHubUser';
-import UseRef from "./components/UseRef"
+import UseRef from "./components/UseRef";
+import UseReducer from "./components/UseReducer";
+import TodoList from "./components/TodoList"
 
 const App = () => {
     
@@ -28,6 +31,12 @@ const App = () => {
 
             {/* UseRef hook section */}
             <UseRef/>
+
+            {/* useReducer Section  */}
+            <UseReducer/>
+
+            {/* TodoList Section  */}
+            <TodoList/>
         </Fragment>
     )
 };

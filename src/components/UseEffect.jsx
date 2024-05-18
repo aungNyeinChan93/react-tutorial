@@ -5,7 +5,7 @@ const UseEffect = () => {
   const [value, setValue] = useState(0);
   const [size,setSize] = useState(window.innerWidth)
   useEffect(()=>{
-    console.log("UE running");
+    // console.log("UE running");
     window.addEventListener("resize", function (){
         setSize(this.window.innerWidth);
         // cleanup function 

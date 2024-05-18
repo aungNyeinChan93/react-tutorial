@@ -15,7 +15,7 @@ const UseRef = () => {
   }
   useEffect(()=>{
     password.current.focus();
-    console.log(password.current);
+    // console.log(password.current);
   },[])
   return (
     <div className="UseRef container-fluid bg-dark-subtle min-vh-100 ">

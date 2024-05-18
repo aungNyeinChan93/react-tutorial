@@ -39,7 +39,7 @@ const GitHubUser = () => {
         </h1>
         <div className="githubUser d-flex p-2 shadow-sm justify-content-around align-items-center bg-danger-subtle rounded mx-4">
           <table className=" text-start m-3 shadow" style={{ width: "900px" }}>
-            <tr className="bg-white text-center  ">
+            <tr className="bg-white text-center  " >
               <th className="p-3 border-2">ID</th>
               <th className="p-3 border-2">Avator</th>
               <th className="p-3 border-2">Name</th>
