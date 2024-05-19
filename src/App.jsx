@@ -8,12 +8,18 @@ import GitHubUser from './components/GitHubUser';
 import UseRef from "./components/UseRef";
 import UseReducer from "./components/UseReducer";
 import TodoList from "./components/TodoList"
+import UseContext from './components/UseContext';
+import ReactRouterDom from './components/ReactRouterDom';
 
 const App = () => {
     
    
     return (
         <Fragment>
+
+            {/* React Router Section */}
+            <ReactRouterDom/>
+            
             <div className="app-section">
                 <CardList cardTitle="Card Title" cardDescription = "this is description"/>
             </div>
@@ -37,6 +43,12 @@ const App = () => {
 
             {/* TodoList Section  */}
             <TodoList/>
+
+            {/* Context hook Section */}
+            <UseContext/>
+
+            
+
         </Fragment>
     )
 };
