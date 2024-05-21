@@ -8,14 +8,17 @@ import GitHubUser from './components/GitHubUser';
 import UseRef from "./components/UseRef";
 import UseReducer from "./components/UseReducer";
 import TodoList from "./components/TodoList"
-import UseContext from './components/UseContext';
 import ReactRouterDom from './components/ReactRouterDom';
+import CustomeHook from './components/CustomeHook';
 
 const App = () => {
     
    
     return (
         <Fragment>
+
+            {/* CustomeHook */}
+            <CustomeHook/>
 
             {/* React Router Section */}
             <ReactRouterDom/>
