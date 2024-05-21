@@ -48,6 +48,7 @@ const GitHubUser = () => {
             <tbody>
               {users.map((item) => {
                 return (
+                  
                   <tr className=" bg-info text-center my-2 " key={item.id}>
                     <td className="p-2 bg-info border-1 my-2">{item.id}</td>
                     <td className="p-2 bg-info border-1 my-2">

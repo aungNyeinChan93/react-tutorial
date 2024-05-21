@@ -45,7 +45,7 @@ const App = () => {
             <TodoList/>
 
             {/* Context hook Section */}
-            <UseContext/>
+            {/* <UseContext/> */}
 
             
 
