@@ -31,7 +31,7 @@ const CustomeHook = () => {
       </h1>
       {post.map((item) => {
         return (
-          <ul className="list-group my-3 w-75 mx-auto p-5">
+          <ul className="list-group my-3 w-75 mx-auto p-5" key={item.id}>
             <li className="list-group-item list-group-item-primary">
               {item.id}
             </li>

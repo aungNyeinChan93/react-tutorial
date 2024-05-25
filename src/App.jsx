@@ -10,12 +10,15 @@ import UseReducer from "./components/UseReducer";
 import TodoList from "./components/TodoList"
 import ReactRouterDom from './components/ReactRouterDom';
 import CustomeHook from './components/CustomeHook';
+import UseMemo from './components/UseMemo';
 
 const App = () => {
     
    
     return (
         <Fragment>
+            {/* UseMemo */}
+            <UseMemo/>
 
             {/* CustomeHook */}
             <CustomeHook/>
