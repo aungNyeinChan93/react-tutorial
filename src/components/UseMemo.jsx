@@ -7,7 +7,7 @@ const UseMemo = () => {
   const [count, setCount] = useState(0);
   const url = "https://jsonplaceholder.typicode.com/users";
     /*
-     * useCallback
+    * useCallback
     const cachedFn = useCallback(fn, dependencies)
     useCallback(fn, dependencies)
     * Usage
@@ -42,7 +42,7 @@ const UseMemo = () => {
   return (
     <div className="useMemo min-vh-100 bg-danger-subtle ">
       <div className="useMemo-counter text-center">
-        <h1>Memo</h1>
+        <h1 className="fs-2 text-danger">Memo and useCallback</h1>
         <h3>{count}</h3>
         <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
           counter

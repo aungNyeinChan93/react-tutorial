@@ -11,12 +11,16 @@ import TodoList from "./components/TodoList"
 import ReactRouterDom from './components/ReactRouterDom';
 import CustomeHook from './components/CustomeHook';
 import UseMemo from './components/UseMemo';
+import UseMemoHook from './components/Context_components/UseMemoHook';
 
 const App = () => {
     
    
     return (
         <Fragment>
+            {/* UseMemoHook section */}
+            <UseMemoHook/>
+            
             {/* UseMemo */}
             <UseMemo/>
 
